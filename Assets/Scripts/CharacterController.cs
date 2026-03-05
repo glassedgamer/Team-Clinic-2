@@ -3,6 +3,8 @@ using UnityEngine;
 public class CharacterController : MonoBehaviour
 {
 
+    public Animator playerAnims;
+
     // The three positios that the player can switch between
     public Vector3 leftPos;
     public Vector3 centerPos;
@@ -34,9 +36,11 @@ public class CharacterController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             currentSpot--;
+            playerAnims.SetTrigger("Left");
         } else if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             currentSpot++;
+            playerAnims.SetTrigger("Right");
         }
 
         // Limits current spot so it can't go past 1 or 3
