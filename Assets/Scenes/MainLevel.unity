@@ -1031,13 +1031,14 @@ MonoBehaviour:
   playerAnims: {fileID: 2082126603}
   rb: {fileID: 2082126605}
   jumpPoint: {fileID: 72766546}
+  positionValue: 4
   leftPos: {x: -4, y: 0, z: 0}
   centerPos: {x: 0, y: 0, z: 0}
   rightPos: {x: 4, y: 0, z: 0}
   currentSpot: 2
   forwardSpeed: 0
   sideSpeed: 40
-  jumpForce: 30
+  jumpForce: 7
   groundMask:
     serializedVersion: 2
     m_Bits: 64

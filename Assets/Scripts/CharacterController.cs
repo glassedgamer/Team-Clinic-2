@@ -10,6 +10,7 @@ public class CharacterController : MonoBehaviour
 
     // The three positios that the player can switch between
     [Header("Player Positions")]
+    public float positionValue = 4.0f;
     public Vector3 leftPos;
     public Vector3 centerPos;
     public Vector3 rightPos;
@@ -50,7 +51,7 @@ public class CharacterController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Jumping();
+        //Jumping();
     }
 
     void SwitchPosition()
@@ -72,17 +73,16 @@ public class CharacterController : MonoBehaviour
         else if (currentSpot > 3)
             currentSpot = 3;
 
-        // Takes spot number after button press and assigns a new position to the player
-        if (currentSpot == 1) 
-            targetPos = leftPos;
-        else if (currentSpot == 2) 
-            targetPos = centerPos;
-        else if (currentSpot == 3) 
-            targetPos = rightPos;
-
-        //Have to use rb values and functions for movement so jump isn't jittery
-        Vector3 newPos = Vector3.MoveTowards(rb.position, targetPos, sideSpeed * Time.deltaTime);
-        rb.MovePosition(newPos);
+        if(currentSpot == 2)
+        {
+            rb.MovePosition(new Vector3(0, transform.position.y, transform.position.z));
+        } else if (currentSpot == 1)
+        {
+            rb.MovePosition(new Vector3(-positionValue, transform.position.y, transform.position.z));
+        } else if (currentSpot == 3)
+        {
+            rb.MovePosition(new Vector3(positionValue, transform.position.y, transform.position.z));
+        }
     }
 
     void Jumping()
