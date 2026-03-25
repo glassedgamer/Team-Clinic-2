@@ -232,6 +232,14 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
+    - boneName: pasted__Shoulder
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
     skeleton:
     - name: updated_character_rig(Clone)
       parentName: 
@@ -243,21 +251,86 @@ ModelImporter:
       position: {x: 0.000000003100132, y: 0.023350317, z: -0.0012023377}
       rotation: {x: 0.70708925, y: -0.7070893, z: -0.004979255, w: -0.004979255}
       scale: {x: 0.9999998, y: 1, z: 0.99999994}
-    - name: pCube6
+    - name: pasted__Lf_UpLeg
       parentName: pasted__Hip
-      position: {x: -0.0024520045, y: 1.2948019e-21, z: -0.000010512712}
-      rotation: {x: 0.70708925, y: -0.70708925, z: -0.004979255, w: 0.004979255}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.0029346384, y: 0.0017605844, z: 0.00007518216}
+      rotation: {x: -0, y: 0.99999505, z: 3.4924597e-10, w: -0.0031586818}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.9999999}
+    - name: pasted__Lf_LowLeg
+      parentName: pasted__Lf_UpLeg
+      position: {x: -0.0071784668, y: 0.0016844126, z: -1.7347234e-20}
+      rotation: {x: 0.99999255, y: 0.000000029804717, z: -0.0038830906, w: -2.8233837e-10}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: pasted__Lf_Foot
+      parentName: pasted__Lf_LowLeg
+      position: {x: -0.007828088, y: -0.0005259157, z: 7.2303275e-17}
+      rotation: {x: -0.000000011750437, y: -0.60080856, z: 0.000000023923464, w: 0.79939294}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: pasted__Lf_Toe
+      parentName: pasted__Lf_Foot
+      position: {x: -0.002457776, y: 0, z: 2.220446e-18}
+      rotation: {x: 8.881783e-16, y: 0.000000029802319, z: 4.4408916e-16, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 1.0000001}
+    - name: pasted__Rt_UpLeg
+      parentName: pasted__Hip
+      position: {x: 0.0029346363, y: -0.0017605799, z: 0.00007518213}
+      rotation: {x: -4.6566126e-10, y: 0.0031586809, z: -0.00000008940697, w: 0.99999505}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: pasted__Rt_LowLeg
+      parentName: pasted__Rt_UpLeg
+      position: {x: 0.007178516, y: -0.0016844199, z: -2.503626e-10}
+      rotation: {x: -0.99999255, y: -0.000000059605775, z: 0.0038830915, w: -9.703098e-11}
+      scale: {x: 1.0000002, y: 0.99999994, z: 0.9999996}
+    - name: pasted__Rt_Foot
+      parentName: pasted__Rt_LowLeg
+      position: {x: 0.007828, y: 0.00052591, z: -2.1239953e-16}
+      rotation: {x: 0.0000000117504335, y: -0.60080856, z: -0.000000023923466, w: 0.79939294}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: pasted__Rt_Toe
+      parentName: pasted__Rt_Foot
+      position: {x: 0.0024577787, y: -2.1094237e-17, z: 0.0000000054600497}
+      rotation: {x: -8.881783e-16, y: 0.000000029802319, z: -8.881783e-16, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000001}
     - name: pasted__Spine
       parentName: pasted__Hip
       position: {x: -0.003683281, y: 1.9131005e-21, z: 0}
       rotation: {x: -0.9999752, y: 0.000000029802319, z: 0.0070417295, w: -5.143158e-17}
       scale: {x: 1, y: 1, z: 0.99999964}
+    - name: pasted__joint7
+      parentName: pasted__Spine
+      position: {x: 0.000000019235, y: 2.6060207e-18, z: 0.0034209632}
+      rotation: {x: -3.308722e-24, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
     - name: pasted__Shoulder
       parentName: pasted__Spine
       position: {x: -0.0036212106, y: -3.081488e-33, z: 1.2472662e-17}
       rotation: {x: 0.99989253, y: -0.000000059603437, z: 0.014660271, w: -7.470296e-11}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000005}
+    - name: pasted__Lf_UpArm
+      parentName: pasted__Shoulder
+      position: {x: 0.0017384113, y: 0.0041744565, z: 0.000057819074}
+      rotation: {x: -0.48815897, y: 0.52565855, z: 0.5115671, w: -0.47295138}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999999}
+    - name: pasted__Lf_LowArm
+      parentName: pasted__Lf_UpArm
+      position: {x: -0.006431091, y: 6.1629757e-35, z: 0}
+      rotation: {x: 0.000000044703487, y: -0.013867439, z: -0, w: 0.99990386}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: pasted__Lf_Hand
+      parentName: pasted__Lf_LowArm
+      position: {x: -0.0066479454, y: -0.00015787942, z: 0.00042896482}
+      rotation: {x: 0.50943196, y: 0.52213955, z: 0.49351063, w: 0.47359976}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: pasted__Lf_Finger
+      parentName: pasted__Lf_Hand
+      position: {x: 0.0004345112, y: 0.00041100156, z: -0.0021949452}
+      rotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: pasted__Lf_Thumb
+      parentName: pasted__Lf_Hand
+      position: {x: -0.0017674268, y: -0.00005808309, z: 0.00031019154}
+      rotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
     - name: pasted__Neck
       parentName: pasted__Shoulder
       position: {x: -0.0035386535, y: -1.27049885e-20, z: 1.3704315e-18}
@@ -288,86 +361,21 @@ ModelImporter:
       position: {x: 0.006647933, y: 0.000157879, z: -0.00042896584}
       rotation: {x: 0.50943196, y: 0.5221394, z: 0.49351072, w: 0.47359988}
       scale: {x: 0.99999994, y: 1.0000002, z: 1}
-    - name: pasted__Rt_Thumb
-      parentName: pasted__Rt_Hand
-      position: {x: 0.0017674261, y: 0.00005807605, z: -0.00031015393}
-      rotation: {x: -0, y: -0, z: -0, w: 1}
-      scale: {x: 0.9999998, y: 1, z: 1}
     - name: pasted__Rt_Finger
       parentName: pasted__Rt_Hand
       position: {x: -0.00043451253, y: -0.00041100883, z: 0.0021949841}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 0.9999998, y: 1, z: 1}
-    - name: pasted__Lf_UpArm
-      parentName: pasted__Shoulder
-      position: {x: 0.0017384113, y: 0.0041744565, z: 0.000057819074}
-      rotation: {x: -0.48815897, y: 0.52565855, z: 0.5115671, w: -0.47295138}
-      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999999}
-    - name: pasted__Lf_LowArm
-      parentName: pasted__Lf_UpArm
-      position: {x: -0.006431091, y: 6.1629757e-35, z: 0}
-      rotation: {x: 0.000000044703487, y: -0.013867439, z: -0, w: 0.99990386}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
-    - name: pasted__Lf_Hand
-      parentName: pasted__Lf_LowArm
-      position: {x: -0.0066479454, y: -0.00015787942, z: 0.00042896482}
-      rotation: {x: 0.5094319, y: 0.5221395, z: 0.4935106, w: 0.47359973}
-      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
-    - name: pasted__Lf_Thumb
-      parentName: pasted__Lf_Hand
-      position: {x: -0.0017674268, y: -0.00005808309, z: 0.00031019154}
-      rotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
-    - name: pasted__Lf_Finger
-      parentName: pasted__Lf_Hand
-      position: {x: 0.0004345112, y: 0.00041100156, z: -0.0021949452}
-      rotation: {x: -0.000000014901161, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
-    - name: pasted__joint7
-      parentName: pasted__Spine
-      position: {x: 0.000000019235, y: 2.6060207e-18, z: 0.0034209632}
-      rotation: {x: -3.308722e-24, y: -0, z: -0, w: 1}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1}
-    - name: pasted__Rt_UpLeg
+    - name: pasted__Rt_Thumb
+      parentName: pasted__Rt_Hand
+      position: {x: 0.0017674261, y: 0.00005807605, z: -0.00031015393}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: pCube6
       parentName: pasted__Hip
-      position: {x: 0.0029346363, y: -0.0017605799, z: 0.00007518213}
-      rotation: {x: -4.6566123e-10, y: 0.0031586806, z: -0.00000008940696, w: 0.999995}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
-    - name: pasted__Rt_LowLeg
-      parentName: pasted__Rt_UpLeg
-      position: {x: 0.007178516, y: -0.0016844199, z: -2.503626e-10}
-      rotation: {x: -0.99999255, y: -0.000000059605775, z: 0.0038830915, w: -9.703098e-11}
-      scale: {x: 1.0000002, y: 0.99999994, z: 0.9999996}
-    - name: pasted__Rt_Foot
-      parentName: pasted__Rt_LowLeg
-      position: {x: 0.007828, y: 0.00052591, z: -2.1239953e-16}
-      rotation: {x: 0.0000000117504335, y: -0.60080856, z: -0.000000023923466, w: 0.79939294}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
-    - name: pasted__Rt_Toe
-      parentName: pasted__Rt_Foot
-      position: {x: 0.0024577787, y: -2.1094237e-17, z: 0.0000000054600497}
-      rotation: {x: -8.881783e-16, y: 0.000000029802319, z: -8.881783e-16, w: 1}
-      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000001}
-    - name: pasted__Lf_UpLeg
-      parentName: pasted__Hip
-      position: {x: 0.0029346384, y: 0.0017605844, z: 0.00007518216}
-      rotation: {x: -0, y: 0.999995, z: 3.4924594e-10, w: -0.0031586816}
-      scale: {x: 1.0000005, y: 1.0000001, z: 0.9999999}
-    - name: pasted__Lf_LowLeg
-      parentName: pasted__Lf_UpLeg
-      position: {x: -0.0071784668, y: 0.0016844126, z: -1.7347234e-20}
-      rotation: {x: 0.99999255, y: 0.000000029804717, z: -0.0038830906, w: -2.8233837e-10}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
-    - name: pasted__Lf_Foot
-      parentName: pasted__Lf_LowLeg
-      position: {x: -0.007828088, y: -0.0005259157, z: 7.2303275e-17}
-      rotation: {x: -0.000000011750437, y: -0.60080856, z: 0.000000023923464, w: 0.79939294}
-      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
-    - name: pasted__Lf_Toe
-      parentName: pasted__Lf_Foot
-      position: {x: -0.002457776, y: 0, z: 2.220446e-18}
-      rotation: {x: 8.881783e-16, y: 0.000000029802319, z: 4.4408916e-16, w: 1}
-      scale: {x: 1, y: 0.9999998, z: 1.0000001}
+      position: {x: -0.0024520045, y: 1.2948019e-21, z: -0.000010512712}
+      rotation: {x: 0.70708925, y: -0.70708925, z: -0.004979255, w: 0.004979255}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
