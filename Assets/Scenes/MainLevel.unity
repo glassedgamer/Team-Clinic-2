@@ -808,9 +808,9 @@ MonoBehaviour:
   centerPos: {x: 0, y: 0, z: 0}
   rightPos: {x: 4, y: 0, z: 0}
   currentSpot: 2
-  forwardSpeed: 0
+  forwardSpeed: 15
   sideSpeed: 40
-  jumpForce: 7
+  jumpForce: 12
   groundMask:
     serializedVersion: 2
     m_Bits: 64
@@ -840,7 +840,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082126600}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 1.5, z: 0}

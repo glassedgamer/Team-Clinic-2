@@ -41,17 +41,30 @@ public class CharacterController : MonoBehaviour
         targetPos = centerPos;
     }
 
+    [System.Obsolete]
     private void Update()
     {
         isGrounded = Physics.CheckSphere(jumpPoint.position, groundDistance, groundMask);
 
+        rb.velocity = new Vector3(0, rb.velocity.y, forwardSpeed);
+
+        if(rb.velocity.z <= 0)
+        {
+            playerAnims.SetBool("Running", false);
+        } else if (rb.velocity.z >= forwardSpeed)
+        {
+            playerAnims.SetBool("Running", true);
+        }
+
         SwitchPosition();
         Jumping();
+
     }
 
     private void FixedUpdate()
     {
         //Jumping();
+        rb.linearDamping = 0;
     }
 
     void SwitchPosition()
