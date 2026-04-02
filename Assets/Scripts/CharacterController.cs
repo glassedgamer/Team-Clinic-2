@@ -47,6 +47,9 @@ public class CharacterController : MonoBehaviour
         //Checks if the player is grounded with a sphere cast
         isGrounded = Physics.CheckSphere(jumpPoint.position, groundDistance, groundMask);
 
+        if (Input.GetKey(KeyCode.Escape))
+            Application.Quit();
+
         //If W pressed, move player forward and play running animation. Else, stop everything
         if(Input.GetKey(KeyCode.W))
         {
@@ -57,6 +60,7 @@ public class CharacterController : MonoBehaviour
             playerAnims.SetBool("Running", false);
         }
 
+        //Guarding is turned on and off. Also stops any movement if you're moving
         if (Input.GetKey(KeyCode.E))
         {
             playerAnims.SetBool("Guarding", true);
@@ -114,6 +118,7 @@ public class CharacterController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            playerAnims.SetTrigger("Jumping");
         }
     }
 
