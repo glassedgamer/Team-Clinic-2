@@ -44,16 +44,27 @@ public class CharacterController : MonoBehaviour
     [System.Obsolete]
     private void Update()
     {
+        //Checks if the player is grounded with a sphere cast
         isGrounded = Physics.CheckSphere(jumpPoint.position, groundDistance, groundMask);
 
-        rb.velocity = new Vector3(0, rb.velocity.y, forwardSpeed);
-
-        if(rb.velocity.z <= 0)
-        {
-            playerAnims.SetBool("Running", false);
-        } else if (rb.velocity.z >= forwardSpeed)
+        //If W pressed, move player forward and play running animation. Else, stop everything
+        if(Input.GetKey(KeyCode.W))
         {
             playerAnims.SetBool("Running", true);
+            rb.velocity = new Vector3(0, rb.velocity.y, forwardSpeed);
+        } else
+        {
+            playerAnims.SetBool("Running", false);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            playerAnims.SetBool("Guarding", true);
+            rb.velocity = new Vector3(0, 0, 0);
+        }
+        else
+        {
+            playerAnims.SetBool("Guarding", false);
         }
 
         SwitchPosition();
